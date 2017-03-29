@@ -1,0 +1,8 @@
+{
+  "name": "next-now-example",
+  "version": "1.0.0",
+  "description": "An example app showcasing Next.js + Now for quick React app development",
+  "private": true,
+  "scripts": {
+  }
+}
