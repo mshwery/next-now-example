@@ -52,10 +52,12 @@ const styles = {
 }
 
 const Character = (props) => (
-  <div style={styles.card}>
-    <div style={styles.character.image(props.thumbnail)}/>    
-    <span style={styles.character.name}>{props.name}</span>
-  </div>
+  <a href={props.urls.find(url => url.type === 'detail').url}>
+    <div style={styles.card}>
+      <div style={styles.character.image(props.thumbnail)}/>    
+      <span style={styles.character.name}>{props.name}</span>
+    </div>
+  </a>
 )
 
 async function searchCharacters (nameStartsWith) {
