@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
     return (
       <div style={styles.base}>
         <h1 style={styles.title}>Marvel Characters</h1>
-        <input type='text' style={styles.input} value={this.state.input} onChange={this.handleChange.bind(this)} />
+        <input type='text' placeholder='Search for characters...' style={styles.input} value={this.state.input} onChange={this.handleChange.bind(this)} />
         <div style={styles.characters}>
           {!characters.length &&
             'No characters found.'
